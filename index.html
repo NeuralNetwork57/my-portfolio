@@ -1,46 +1,47 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <title>Nadya Ninis - Portfolio</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio of Nadya Ninis, Computer Science student">
     <link rel="stylesheet" href="./style.css"/>
-    <script src="./script.js"></script>
+    <script src="./script.js" defer></script>
   </head>
   <body>
     <!-- Navigation Bar -->
-    <nav>
+    <nav aria-label="Main navigation">
       <div id="home">
         <div class="profile_name">
-          Nadya Ninis
+          <h1>Nadya Ninis</h1>
           <div class="contact_info">
-            <img src="html_finalprojimages/envelope.png" alt="https://icons8.com/icon/124377/circled-envelope"/> 
-          nadya_ninis@hotmail.de 
-        <div style="clear:both;"></div>
-        <div class="contact_info">
-          <img src="html_finalprojimages/phone.png" alt="https://icons8.com/icon/124377/circled-envelope"/>
-          +971545678046
-
-        </div>
+            <img src="html_finalprojimages/envelope.png" alt="Email icon"/> 
+            <a href="mailto:nadya_ninis@hotmail.de">nadya_ninis@hotmail.de</a>
+          </div>
+          <div style="clear:both;"></div>
+          <div class="contact_info">
+            <img src="html_finalprojimages/phone.png" alt="Phone icon"/>
+            <a href="tel:+971545678046">+971 54 567 8046</a>
+          </div>
         </div>
         <div class="topdiv">
           <a class="topmenu" href="#about-me">About Me</a>
           <a class="topmenu" href="#skills">Skills</a>
           <a class="topmenu" href="#projects">Projects</a>
           <a class="topmenu" href="#recommendations">Recommendations</a>
-          <!-- done - Add the links for Skills, Projects and Recommendation here - done -->
-
         </div>
       </div>    
     </nav>
 
-    <!-- done - image not visible - About Me -->
-    <section id="about-me" class="container">
+    <!-- About Me -->
+    <section id="about-me" class="container" aria-labelledby="about-me-heading">
       <div>
-        <img src="html_finalprojimages/nerdie_pic.png" class="profile_image"/>
+        <img src="html_finalprojimages/nerdie_pic.png" alt="Portrait of Nadya Ninis" class="profile_image"/>
       </div>
 
       <div>
-          <h1>
-            Hi, I'm Nadya Ninis! <img src="html_finalprojimages/waving-hand.png" width="60px"/>
+          <h1 id="about-me-heading">
+            Hi, I'm Nadya Ninis! <img src="html_finalprojimages/waving-hand.png" alt="Waving hand emoji" width="60px"/>
           </h1>
           <p>
             I am a Computer Science student entering Computerland. <br>
@@ -50,44 +51,40 @@
     </section>
               
     <!-- Skills -->
-    <section id="skills">
-      <h2>Skills</h2>
+    <section id="skills" aria-labelledby="skills-heading">
+      <h2 id="skills-heading">Skills</h2>
       <div style="clear:both;"></div>
 
       <div class="all_skills">
         <div class="skill">
-          <img src="html_finalprojimages/html5.png"/>
-          <h6>HTML</h6>
+          <img src="html_finalprojimages/html5.png" alt="HTML5 logo"/>
+          <h3>HTML</h3>
           <p>beginner level</p>
         </div>  
 
         <div class="skill">
-          <img src="html_finalprojimages/js.jpeg"/>
-          <h6>JavaScript</h6>
+          <img src="html_finalprojimages/js.jpeg" alt="JavaScript logo"/>
+          <h3>JavaScript</h3>
           <p>beginner level</p>
         </div>  
 
         <div class="skill">
-            <img src="html_finalprojimages/node.png"/>
-            <h6>Node</h6>
-            <p>beginner level</p>
-          </div>  
+          <img src="html_finalprojimages/node.png" alt="Node.js logo"/>
+          <h3>Node</h3>
+          <p>beginner level</p>
+        </div>  
 
-          <div class="skill">
-            <img src="html_finalprojimages/react.png"/>
-            <h6>React</h6>
-            <p>beginner level</p>
-          </div>  
-
-        <!-- done - Add more skills here -->
-
-
+        <div class="skill">
+          <img src="html_finalprojimages/react.png" alt="React logo"/>
+          <h3>React</h3>
+          <p>beginner level</p>
+        </div>  
       </div>
     </section>
           
-    <!-- done - Projects -->
-    <section class="projects" id="projects">
-      <h2>
+    <!-- Projects -->
+    <section class="projects" id="projects" aria-labelledby="projects-heading">
+      <h2 id="projects-heading">
         Projects
       </h2>
       <div style="clear:both;"></div>
@@ -96,83 +93,84 @@
           <div class="project-card">
             <h3>Unit converter</h3>
             <ul>
-              <li>Developed an online conversion tool that converts temparature, weight and distance using HTML, CSS, JavaScript.</li>
+              <li>Developed an online conversion tool that converts temperature, weight and distance using HTML, CSS, JavaScript.</li>
             </ul>
           </div>
-          <hr>
+          <hr aria-hidden="true">
           <div class="project-card">
             <h3>Interest calculator</h3>
             <ul>
-              <li>Developed an online tool that can compute interest using HTML + CSS + JavaScript. </li>
+              <li>Developed an online tool that can compute interest using HTML + CSS + JavaScript.</li>
             </ul>
           </div>
-          <hr>
+          <hr aria-hidden="true">
           <div class="project-card">
             <h3>Form validator</h3>
             <ul>
-              <li>Created an online validation form for customers to fill out their details using HTML and JavaScript. </li>
+              <li>Created an online validation form for customers to fill out their details using HTML and JavaScript.</li>
             </ul>
           </div>
-    </div>
+        </div>
     </section>
     <div style="clear:both;"></div>
 
-    <!-- done - Recommendations -->
-    <section id="recommendations">
-      <h2>Recommendations</h2>
+    <!-- Recommendations -->
+    <section id="recommendations" aria-labelledby="recommendations-heading">
+      <h2 id="recommendations-heading">Recommendations</h2>
       <div style="clear:both;"></div>
       <div class="all_recommendations" id="all_recommendations">
         <div class="recommendation">
-          <span>&#8220;</span>
-          Nadya is a very quick learner and quickly grasps key concepts of Web development. 
-          She got a great attitude & she is an excellent team player. 
-          She has a curious mind and asks the right question. 
-          She takes initiative within a team and has potentials to lead the team.
-          <span>&#8221;</span>
+          <blockquote>
+            Nadya is a very quick learner and quickly grasps key concepts of Web development. 
+            She got a great attitude & she is an excellent team player. 
+            She has a curious mind and asks the right question. 
+            She takes initiative within a team and has potentials to lead the team.
+          </blockquote>
         </div>
         <div class="recommendation">
-          <span>&#8220;</span>
-          Working with Nadya has been an awesome experience. 
-          She is highly knowledgable and always goes the extra step to make sure everything is right. 
-          For any future projects that need her expertise I would definitely want to work with her again.
-          <span>&#8221;</span>
+          <blockquote>
+            Working with Nadya has been an awesome experience. 
+            She is highly knowledgeable and always goes the extra step to make sure everything is right. 
+            For any future projects that need her expertise I would definitely want to work with her again.
+          </blockquote>
         </div>
         <div class="recommendation">
-          <span>&#8220;</span>
-          I had worked along with Nadya during the initial phase of our venture which needed Web development. 
-          She is a committed resource who has in depth knowledge about the domain. 
-          She will be an asset for any organisation! 
-          <span>&#8221;</span>
+          <blockquote>
+            I had worked along with Nadya during the initial phase of our venture which needed Web development. 
+            She is a committed resource who has in depth knowledge about the domain. 
+            She will be an asset for any organisation!
+          </blockquote>
         </div>
       </div>
     </section>
 
-    <!-- done - Recommendation Form -->
-    <section id="contact">
+    <!-- Recommendation Form -->
+    <section id="contact" aria-labelledby="contact-heading">
       <div class="flex_center">
         <fieldset>
-          <legend class="introduction">Leave a Recommendation</legend>          
-          <input type="text" placeholder="Name (Optional)"> <br/>
-          <textarea id="new_recommendation" cols="500" rows="10" placeholder="Message"></textarea>
+          <legend id="contact-heading" class="introduction">Leave a Recommendation</legend>          
+          <label for="recommender_name">Name (Optional)</label>
+          <input type="text" id="recommender_name" name="recommender_name"> <br/>
+          <label for="new_recommendation">Your Recommendation</label>
+          <textarea id="new_recommendation" name="new_recommendation" cols="500" rows="10" placeholder="Message" required></textarea>
           <div class="flex_center">
-            <button id="recommend_btn" onclick="addRecommendation()">Submit</button>
+            <button id="recommend_btn" type="button" onclick="addRecommendation()">Submit</button>
           </div>
         </fieldset>
       </div>
     </section>
 
     <div class="iconbutton">
-      <a href="#home">
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="white" width="63px">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M15 11.25l-3-3m0 0l-3 3m3-3v7.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-          </svg>
-        <!-- done - Add the code here for the logo to appear and the icon to be actionable-->
+      <a href="#home" aria-label="Back to top">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="white" width="63px" aria-hidden="true">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M15 11.25l-3-3m0 0l-3 3m3-3v7.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+        </svg>
       </a>
     </div>
 
-    <div class="popup" id="popup" class="flex_center">
-      <img src="html_finalprojimages/checkmark--outline.svg"/>
-      <h3><!-- done - Add appropriate text here--> Thanks for leaving a recommendation! </h3>
+    <div class="popup" id="popup" class="flex_center" role="alertdialog" aria-labelledby="popup-heading">
+      <img src="html_finalprojimages/checkmark--outline.svg" alt=""/>
+      <h3 id="popup-heading">Thanks for leaving a recommendation!</h3>
       <button onclick="showPopup(false)">Ok</button>
     </div>
   </body>
